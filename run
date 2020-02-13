@@ -1,0 +1,73 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.0305
+header_name {.h}
+code_name {.cxx}
+class ScoobyDoo {open selected
+} {
+  Function {make_window()} {open
+  } {
+    Fl_Window Windows1 {open
+      xywh {537 330 616 424} type Double visible
+    } {
+      Fl_Group LocationGroup {open
+        xywh {5 5 429 90} box ENGRAVED_BOX
+      } {
+        Fl_Input OldLocationInput {
+          label {Old Location:}
+          xywh {105 20 255 20}
+        }
+        Fl_Input NewLocationInput {
+          label {New Location:}
+          xywh {105 50 255 20}
+        }
+        Fl_Button SearchOldLocation {
+          label {...}
+          xywh {370 20 50 20}
+        }
+        Fl_Button SearchNewLocation {
+          label {...}
+          xywh {370 50 50 20}
+        }
+      }
+      Fl_Group ChoiceGroup {open
+        xywh {435 5 175 90} box ENGRAVED_BOX
+      } {
+        Fl_Check_Button sn1Check {
+          label {new SN1}
+          xywh {450 15 80 20} down_box DOWN_BOX
+        }
+        Fl_Check_Button sn2Check {
+          label {new SN2}
+          xywh {450 40 80 20} down_box DOWN_BOX
+        }
+        Fl_Check_Button sd2Check {
+          label {new SD2}
+          xywh {450 65 80 20} down_box DOWN_BOX
+        }
+      }
+      Fl_Group StatusGroup {open
+        xywh {5 100 605 250} box ENGRAVED_FRAME
+      } {
+        Fl_Progress {} {
+          label label
+          xywh {15 115 585 20}
+        }
+        Fl_Text_Display {} {
+          xywh {15 140 585 200}
+        }
+      }
+      Fl_Group SubmittionGroup {open
+        xywh {5 355 605 55} box ENGRAVED_BOX
+      } {
+        Fl_Button {} {
+          label button
+          xywh {220 370 150 25}
+        }
+        Fl_Menu_Button {} {
+          label menu open
+          xywh {525 375 69 20}
+        } {}
+      }
+    }
+  }
+}
